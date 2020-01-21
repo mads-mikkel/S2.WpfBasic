@@ -13,13 +13,5 @@
         <Canvas.Background>
             <ImageBrush ImageSource="Win10Dark.jpg" />
         </Canvas.Background>
-        <CheckBox x:Name="checkBox"
-                  Content="CheckBox"
-                  Canvas.Left="99"
-                  Canvas.Top="145" />
-        <RadioButton x:Name="radioButton"
-                     Content="RadioButton"
-                     Canvas.Left="193"
-                     Canvas.Top="132" />
     </Canvas>
 </Window>
