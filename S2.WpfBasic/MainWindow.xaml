@@ -5,29 +5,21 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:S2.WpfBasic"
         mc:Ignorable="d"
-        Title="MainWindow"
+        WindowStyle="None"
+        ResizeMode="NoResize"
         Height="450"
         Width="800">
-    <Grid>
-        <TextBlock x:Name="textBlock"
-                   HorizontalAlignment="Center"
-                   Text="Hej WPF"
-                   TextWrapping="Wrap"
-                   VerticalAlignment="Top"
-                   Height="106"
-                   Width="316"
-                   Foreground="#FFCA13D3"
-                   FontSize="72"
-                   FontFamily="Segoe UI Semibold"
-                   Margin="0,10,0,0" />
-        <Button x:Name="button"
-                Content="KLIK PÅ MIG"
-                HorizontalAlignment="Left"
-                Margin="201,162,0,0"
-                VerticalAlignment="Top"
-                Height="168"
-                Width="377"
-                Click="button_Click" />
-
-    </Grid>
+    <Canvas>
+        <Canvas.Background>
+            <ImageBrush ImageSource="Win10Dark.jpg" />
+        </Canvas.Background>
+        <CheckBox x:Name="checkBox"
+                  Content="CheckBox"
+                  Canvas.Left="99"
+                  Canvas.Top="145" />
+        <RadioButton x:Name="radioButton"
+                     Content="RadioButton"
+                     Canvas.Left="193"
+                     Canvas.Top="132" />
+    </Canvas>
 </Window>
